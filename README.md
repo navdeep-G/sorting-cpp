@@ -7,5 +7,5 @@
 make
 # Run
 ./sorting
-
+```
 
