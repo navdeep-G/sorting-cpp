@@ -3,9 +3,7 @@
 
 # Build Instructions
 ```
-# Build
-make
-# Run
-./sorting
+# Build and Run
+make buildrun
 ```
 
