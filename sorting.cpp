@@ -42,7 +42,7 @@ void check(vector<int> &control, vector<int> &data) {
 	}
 }
 
-//Sorting fxns
+/* Sorting Functions */
 
 //Insertion sort
 void insertion_sort(vector<int> &data) {
