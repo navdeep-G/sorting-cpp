@@ -60,10 +60,8 @@ void insertion_sort(vector<int> &data) {
 			else {
 				break;
 			}
-
 			j--;
 		}
-
 	}
 }
 
@@ -78,7 +76,6 @@ void selection_sort(vector<int> &data) {
 				min = data[j];
 				index_min = j;
 			}
-
 		}
 
 		//Swap it with i
@@ -109,7 +106,6 @@ void max_heapify(vector<int> &data, int i, int end) {
 		if(data[left] > data[largest]) {
 			largest = left;
 		}	
-
 	}
 
 	if(right < end) {
@@ -142,7 +138,6 @@ void heap_sort(vector<int> &data) {
 		int tmp = data[end];
 		data[end] = data[0];
 		data[0] = tmp;
-
 		max_heapify(data, 0, end);
 		end--;
 	}
@@ -172,8 +167,6 @@ void lsb_radix_sort(vector<int> &data) {
 			//data[i] ^= INT_MIN;
 			buffer[i] = data[i];
 		}
-
-
 		//Init count to 0
 		for(int i = 0; i < nbuckets; i++) {
 			count[i] = 0;
@@ -187,7 +180,6 @@ void lsb_radix_sort(vector<int> &data) {
 		for(int i=0; i < nbuckets; i++) {
 			count[i+1] += count[i];
 		}
-		
 		//Sort
 		for(int i=0; i < data.size(); i++) {
 			int sort_bits = (buffer[i] >> bit) & mask;	
@@ -197,7 +189,6 @@ void lsb_radix_sort(vector<int> &data) {
 		}
 		
 	}
-
 	//Convert back to signed
 	for(int i = 0; i < data.size(); i++) {
 		data[i] ^= INT_MIN;
