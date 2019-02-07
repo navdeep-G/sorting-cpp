@@ -35,10 +35,10 @@ struct Timer {
 
 void check(vector<int> &control, vector<int> &data) {
 	if(equal(control.begin(), control.end(), data.begin())) {
-		cout << "Correct.\n";
+		cout << "Correct! Vectors agree.\n";
 	}
 	else {
-		cout << "Incorrect.\n";
+		cout << "Incorrect! Vectors do NOT agree.\n";
 	}
 }
 
