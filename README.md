@@ -1,5 +1,5 @@
 # Collection of sorting algorithms in C++
-`C++` implementations of commonly used sorting algorithms.
+`C++` implementation of commonly used sorting algorithms.
 
 # Build Instructions
 ```
