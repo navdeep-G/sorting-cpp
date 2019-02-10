@@ -1,7 +1,7 @@
 # Collection of sorting algorithms in C++
 `C++` implementation of commonly used sorting algorithms.
 
-# Build Instructions
+# Instructions to build and run
 ```
 # Build
 make build
